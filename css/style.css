@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #da2;
+    width: 100vw;
+    height: 90vw;
+    margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Garante que os elementos vão ser colocados 1 por linha */
+    flex-direction: column;
+    min-width: 345px;
+    border: 2px solid #b80;
+    box-shadow: -2px 2px 4px 2px #a84;
+}
+
+#imagem {
+    background-image: url("../img/forca.png");
+    width: 234px;
+    height: 272px;
+    background-repeat: no-repeat;
+    /* margin-left: -40%; */
+}
+
+#palavra-secreta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    margin-top: 30px;
+    color: #1d2088;
+}
+
+.letras {
+    width: 18px;
+    text-align: center;
+    border-bottom: 2px solid #8b008b;
+    color: #fff;
+    padding: 2px;
+    margin: 0 2px;
+}
+
+.letrasEspaco {
+    width: 18px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    margin: 0 2px;
+}
+
+#fileira {
+    margin-left: -4.5%;
+    margin-bottom: 5px;
+}
+
+#teclado {
+    margin-top: 30px;
+}
+
+.teclas button {
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px dimgray;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+    color: #8b008b;
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.teclas button:disabled {
+    cursor: not-allowed;
+}
+
+.teclas button:active {
+    box-shadow: inset -2px 2px 2px 0 #888;
+    font-size: 1.2rem;
+}
+
+#btnReiniciar {
+    width: 56px;
+    height: 26px;
+    font-size: 1.1em;
+    background-color: #9fa;
+}
+
+.teclas button:hover {
+    transform: scale(1.3);
+}
+
+#categoria {
+    margin-top: 30px;
+    color: #8b008b;
+    font-size: 1.2em;
+}
+
+@media (min-width: 355px) {
+    .teclas button {
+        width: 25px;
+        height: 25px;
+    }
+    #btnReiniciar {
+        width: 58px;
+        height: 28px;
+    }
+    #categoria {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 406px) {
+    .teclas button {
+        width: 30px;
+        height: 30px;
+    }
+    .letras {
+        width: 24px;
+    }
+    #palavra-secreta {
+        font-size: 1.5em;
+    }
+    #btnReiniciar {
+        width: 64px;
+        height: 32px;
+    }
+    #categoria {
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 446px) {
+    .teclas button {
+        width: 34px;
+        height: 34px;
+        font-size: 1.3em;
+    }
+    .letras {
+        width: 26px;
+    }
+    #palavra-secreta {
+        font-size: 1.6em;
+    }
+    #btnReiniciar {
+        width: 76px;
+        height: 40px;
+        font-size: 1.5em;
+    }
+    #categoria {
+        font-size: 1.6em;
+    }
+}
+
+@media (min-width: 770px) {
+    .teclas button {
+        width: 54px;
+        height: 54px;
+        font-size: 1.6em;
+    }
+    .letras {
+        width: 32px;
+        border-bottom: 3px solid #8b008b;
+    }
+    #palavra-secreta {
+        font-size: 2em;
+    }
+    #btnReiniciar {
+        width: 116px;
+        height: 64px;
+        font-size: 2.2em;
+    }
+    #categoria {
+        font-size: 2em;
+    }
+}
